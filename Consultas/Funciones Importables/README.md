@@ -9,7 +9,7 @@ from dataApiYouTube import dataPlayList
 
 Luego es necesario tener una llave de la Api de YouTube v3 para poder correr la función. En la sección inicial de [consultas](#Consultas/README.md) mostramos como crearla. Tambien es necesario proveer un link de una lista de reproducción activa de YouTube.
 
-Vamos a ver un ejemplo de el uso de la función
+Vamos a ver un ejemplo de el uso de la función. Primero definimos las dos variables que requiere la función.
 
 
 ```python
@@ -18,6 +18,7 @@ apiKey='AIzaSyDqq-BEw8S5_mJq60d5QGZcBv13Gyu6qiw'
 playlistId='PLquqRxGjdk0746Gtzb102zxI3gmDVJts5'
 ```
 
+Luego ejeecutamos la función y obtenemos un archivo `.JSON` con la URL, Titulo, Definición, Dimensión, Numero de comentarios, Numero de favoritos, Likes y vistas; de los videos incluidos en la lista de reproducción proporcionada. 
 
 ```python
 dataPlayList(api_Key=apiKey,playlist_Id=playlistId)
